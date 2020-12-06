@@ -1,10 +1,9 @@
-def findMedianSortedArrays(nums1, nums2):
-    """
-    :type nums1: List[int]
-    :type nums2: List[int]
-    :rtype: float
-    """
+'''
+    Find the median of two arrays sorted in increasing order
+'''
 
+
+def findMedianSortedArrays(nums1, nums2):
     mid_element = (len(nums1) + len(nums2)) / 2.0
     if mid_element == 0:
         return 0
