@@ -2,6 +2,7 @@
     Find the median of two arrays sorted in increasing order
 '''
 
+# Solution 1
 
 def findMedianSortedArrays(nums1, nums2):
     mid_element = (len(nums1) + len(nums2)) / 2.0
@@ -23,6 +24,8 @@ def findMedianSortedArrays(nums1, nums2):
         return newlist[-1]
     return (newlist[-1] + newlist[-2]) / 2.0
 
+
+# Solution 2
 
 def median(A, B):
     m, n = len(A), len(B)
