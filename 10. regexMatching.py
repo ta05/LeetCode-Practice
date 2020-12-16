@@ -17,4 +17,9 @@ def isMatch(s, p):
         return first_match and isMatch(s[1:], p[1:])
 
 
-print(isMatch("ab", ".*"))
+print(isMatch("aa", "a")) # False
+print(isMatch("aa", "a*")) # True
+print(isMatch("ab", ".*")) # True
+print(isMatch("aab", "c*a*b")) # True
+print(isMatch("mississippi", "mis*is*p*.")) # False
+print(isMatch("mississippi", "mis*is*ip*.")) # True
